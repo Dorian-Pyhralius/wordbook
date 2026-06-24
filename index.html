@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuart C. Foy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..900&amp;display=swap" rel="stylesheet">
+
+    <style>
+
+            body {
+                background: #862633;
+                font-family: "Mona Sans", sans-serif;
+                font-optical-sizing: auto;
+                
+                font-style: normal;
+                font-variation-settings: "width" 100;
+                text-align: center;
+                align-content: center;
+                min-height: 90vh;
+            }
+
+
+
+
+            a {
+                text-shadow: 0 135px 0 #E4D5C4;
+                color: #E4D5C4;
+                font-size: 150px;
+                text-transform: uppercase;
+                font-weight: 900;
+                text-decoration: none;
+                overflow: hidden;
+                line-height: 1;
+
+                text-box-trim: both:
+                text-box-edge: cap alphabetic;
+                display: block;
+                margin: 10px 0;
+            }
+
+            #word span {
+                display: inline-block;
+                position: relative;
+                animation: up 0.3s forwards;
+                animation-delay: calc(sibling-index() * 0.021s);
+            }
+
+            a:hover span{
+                display: inline-block;
+                position: relative;
+               
+                animation: up 0.3s forwards;
+                animation-delay: calc(sibling-index() * 0.02s);
+            }
+            
+            
+
+
+            @keyframes up {
+                100% {
+                    transform: translateY(-0.90em);
+                }
+            }
+
+            .app {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="app" style="display: flex; flex-direction: column; gap: 20px">
+        <a id="word"; href="#"></a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
